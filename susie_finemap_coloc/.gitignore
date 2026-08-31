@@ -1,0 +1,20 @@
+# ---------------------------------------------------------------------------
+# Summary statistics ARE distributed, as compressed archives (data/*.zip), and are
+# extracted into data/gwas/ and data/eqtl/ on first run -- so ignore the extracted copies.
+# The genotype LD panels are NOT distributed (data/ld_panels/): the GWAS-side panels are
+# UK Biobank individual-level data (access-only) and the 1000G EUR panel is large.
+# Provide your own LD panels under data/ld_panels/ (see the notebook overview).
+# ---------------------------------------------------------------------------
+data/gwas/
+data/eqtl/
+data/ld_panels/
+
+# Analysis outputs (regenerate by running the notebook)
+results/
+
+# R / Jupyter working files
+.ipynb_checkpoints/
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
